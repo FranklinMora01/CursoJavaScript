@@ -3,7 +3,6 @@
 //2) Utilizando exclusivamente los dos valores booleanos del array, determinar los operadores necesarios para obtener un resultado true y otro resultado false
 //3) Determinar el resultado de las cinco operaciones matemáticas realizadas con los dos elementos numéricos
 
-
 const valores = [true, 5, false, "hola", "adios", 2];
 let vecTexto = [];
 let vecBoolean = [];
@@ -12,7 +11,6 @@ let vecNumeros = [];
 function recorrerVector(vector){
     vector.forEach(function(elemento){
     if(typeof elemento === "string"){
-        //console.log(elemento);
         vecTexto.push(elemento);      
     } else if (typeof elemento === "boolean") {
         vecBoolean.push(elemento);
@@ -44,12 +42,7 @@ function operacionesMatematicas(vector){
     console.log(`la division de los dos numeros es: ${vector[0] / vector[1]}`);
 }
 
-
-
 recorrerVector(valores);
-//console.log(vecTexto);
-//console.log(vecBoolean);
-//console.log(vecNumeros);
 hallarMayorTexto(vecTexto);
 evaluarVerdaderoFalso(vecBoolean);
 operacionesMatematicas(vecNumeros);
