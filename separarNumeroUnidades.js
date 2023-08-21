@@ -1,6 +1,6 @@
 //leer un numero entero positivo X y separarlos por unidades. 
 
-const numero = 818;
+const numero = 917;
 let vecNumerosSeparados = [];
 
 function separar(num){
